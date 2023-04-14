@@ -41,7 +41,7 @@
     }
 }
 
-.projects {
+.projects, .skillSet {
     font-family: 'Work Sans', sans-serif;
     text-align: left;
     margin-top: 10rem;

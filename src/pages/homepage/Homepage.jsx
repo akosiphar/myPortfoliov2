@@ -22,7 +22,10 @@ export default function Homepage() {
           </div>
       </div>
       
-      <div className={styles.aboutMe}></div>
+      <div className={styles.skillSet}>
+        <h2 className={styles.h2}>Skill <span>Set</span></h2>
+
+      </div>
 
 
       <div className={styles.projects}>
@@ -44,7 +47,7 @@ export default function Homepage() {
           <div className={styles.card}>
             <div className={styles.imageHolder} />
             <div className={styles.textHolder}>
-              <p className={styles.title}>INTALIO ESTATES</p>
+              <p className={styles.title}>JRCC</p>
               <p className={styles.desc}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.
               </p>
@@ -56,14 +59,13 @@ export default function Homepage() {
           <div className={styles.card}>
             <div className={styles.imageHolder} />
             <div className={styles.textHolder}>
-              <p className={styles.title}>INTALIO ESTATES</p>
+              <p className={styles.title}>Jacinta Enclaves</p>
               <p className={styles.desc}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.
               </p>
               <button className={styles.homeBtn}>VIEW SITE</button>
             </div>
           </div>
-        
       </div>
     </>
   )
