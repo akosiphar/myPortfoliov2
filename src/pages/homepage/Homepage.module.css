@@ -1,0 +1,122 @@
+
+
+
+.home {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.5rem;
+    color: rgb(116, 116, 116);
+}
+
+.home > span {
+    color: white;
+}
+
+.mainDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.arrowDown {
+    font-size: 5rem;
+    position: absolute;
+    bottom: 10%;
+    filter: invert();   
+    animation: upDown 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+.projects {
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    margin-top: 10rem;
+}
+
+.h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.h2 > span {
+    font-weight: 500;
+}
+
+.card {
+    max-width: 1440px;
+    display: flex;
+    align-items: end;
+    margin: 5rem 0;
+    gap: 0 3rem;
+}
+
+.card:nth-child(odd) {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    margin: 1rem 0;
+    gap: 0 1rem;
+}
+
+.imageHolder {
+    background-image: url('../../assets/intalio-estates.JPG');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 10%;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+
+.textHolder {
+    font-size: 2rem;
+    width: 50%;
+}
+
+.title {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.homeBtn {
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    width: auto;
+    position: relative;
+    transition: background-image ease-in-out .3s;
+}
+
+.arrow {
+    margin-left: 0;
+    transition: margin-left .3s ease-in-out;
+}
+
+.homeBtn:hover > .arrow {
+    margin-left: 1rem;
+}
+
+
