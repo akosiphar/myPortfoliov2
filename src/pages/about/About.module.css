@@ -1,12 +1,24 @@
 
 .heroDiv {
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        
+    padding: 0 2rem;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;        
+}
+
+.contactDiv {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    
 }
 
 .h1 {
@@ -46,14 +58,14 @@
 }
 
 .imageHolder {
-    height: 80%;
-    width: 40%;
+    height: 100%;
+    width: 50%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem 1rem;
+    gap: 0 1rem;
 }
 
 .imageHolder > img {
@@ -93,4 +105,62 @@
 
 .contactHolder > div > a:hover {
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .heroDiv {
+        padding-top: 5rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .imageHolder {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem 1rem;
+    }
+
+    .imageHolder > img {
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .textHolder {
+        height: 80%;
+        width: auto;
+    }
+
+    .content {
+        padding: 0 2rem;
+        display: block;
+        font-size: 1rem;
+        margin-top: auto;
+        height: 90%;
+    }
+
+    .socialContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0 1rem;
+        margin-right: 1rem;
+    }
+
+    .content {
+        margin-bottom: 2rem;
+    }
+
+    .contactDiv {
+        margin-top: 3rem;
+    }
 }

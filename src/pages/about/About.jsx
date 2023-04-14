@@ -34,15 +34,17 @@ export default function About() {
         </div>
         
       </div>
+
       <div className={styles.imageHolder}>
         <img src='https://images.unsplash.com/photo-1608663003920-757dd225d6c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80' />
         <img src='https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' />
         <img src='https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8' />
         
       </div>
+
     </div>
 
-    <div>
+    <div className={styles.contactDiv}>
       <p className={styles.h1}>Contact <span> Me</span></p>
       <p className={styles.h2}>
         You can message me through:
