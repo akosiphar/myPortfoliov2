@@ -8,7 +8,7 @@ export default function AppNavBar() {
     <>
     <div className='navContainer'>
       <nav>
-        <div>LOGO</div>
+        <div>RG</div>
         <div className="navLinkContainer">
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/about"}>About</NavLink>
