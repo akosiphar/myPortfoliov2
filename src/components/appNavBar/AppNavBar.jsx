@@ -12,7 +12,6 @@ export default function AppNavBar() {
         <div className="navLinkContainer">
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/about"}>About</NavLink>
-          <NavLink to={"/work"}>Work</NavLink>
         </div>
       </nav>
     </div>

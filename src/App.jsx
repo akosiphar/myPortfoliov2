@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-    <Router basename='/myPortfoliov2'>
+    <Router basename='/myPortfoliov2/'>
       <AppNavBar />
       <Routes>
         <Route path='/' element={<Homepage />} />

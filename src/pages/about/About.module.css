@@ -1,0 +1,59 @@
+
+.heroDiv {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+}
+
+.h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem;
+    text-align: left;
+    color: rgb(116, 116, 116);
+}
+
+.h1 > span {
+    color: white;
+}
+
+.content {
+    
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    /* background-color: red; */
+    font-size: 2rem;
+    margin-top: auto;
+    height: 90%;
+}
+
+.textHolder {
+    /* background-color: blue; */
+    height: 80%;
+    width: 50%;
+}
+
+.imageHolder {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.imageHolder > div {
+    background-color: rgb(110, 44, 44);
+    width: 15rem;
+    height: 20rem;
+    border: 1px solid;
+    border-radius: 15px;
+}

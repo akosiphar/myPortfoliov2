@@ -45,6 +45,15 @@
     font-family: 'Work Sans', sans-serif;
     text-align: left;
     margin-top: 10rem;
+    padding: 0 2rem;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.imageContainer > img {
+    width: 150px;
 }
 
 .h2 {
@@ -85,7 +94,41 @@
     border-radius: 20px;
 }
 
+.imageHolder_2 {
+    background-image: url('../../assets/jacinta-enclaves.JPG');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
 
+.imageHolder_3 {
+    background-image: url('../../assets/weecommcentre.JPG');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 10%;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.imageHolder_4 {
+    background-image: url('../../assets/jrcc.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 10%;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
 
 .textHolder {
     font-size: 2rem;
@@ -93,14 +136,15 @@
 }
 
 .title {
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 3rem;
 }
 
 .homeBtn {
     padding: .5rem 1rem;
     border-radius: 20px;
+    font-size: .8rem;
     border: 1px solid white;
     background-color: transparent;
     letter-spacing: .3rem;
@@ -108,6 +152,11 @@
     width: auto;
     position: relative;
     transition: background-image ease-in-out .3s;
+}
+
+.homeBtn > a {
+    width: 100%;
+    font-size: inherit;
 }
 
 .arrow {
@@ -119,4 +168,32 @@
     margin-left: 1rem;
 }
 
+.homeBtn > a:hover {
+    color: white;
+}
+
+.homeBtn > a:hover::after {
+    width: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .imageContainer {
+        padding: 0 0rem;
+    }
+
+    .card, .card:nth-child(odd) {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0;
+        gap: 2rem 0;
+    }
+
+    .imageHolder, .imageHolder_2, .imageHolder_3, .textHolder {
+       width: 100%;
+    }
+}
 
