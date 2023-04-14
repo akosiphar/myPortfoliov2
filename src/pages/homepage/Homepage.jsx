@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from "./Homepage.module.css"
 import Typewriter from 'typewriter-effect'
 import dArrow from '../../assets/double_arrow_down.png'
@@ -18,6 +18,9 @@ import gitlab from '../../assets/icons/gitlab.png'
 import webflow from '../../assets/icons/webflow.png'
 
 export default function Homepage() {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
 
   return (
     <>
@@ -61,6 +64,22 @@ export default function Homepage() {
 
       <div className={styles.projects}>
           <h2 className={styles.h2}>My <span>Works</span></h2>
+          <h3 className={styles.h3}>Personal <span>Projects</span></h3>
+
+          <div className={styles.card}>
+            <div className={styles.imageHolder_5} />
+            <div className={styles.textHolder}>
+              <p className={styles.title}>E-Commerce Website</p>
+              <button className={styles.homeBtn} >
+                <a target='_blank' href='https://my-e-commerce-32bcm4krn-akosiphar.vercel.app/'>VIEW SITE
+                </a>
+                <span className={styles.arrow}>{'>'}</span>
+              </button>
+            </div>
+          </div>
+
+
+          <h3 className={styles.h3}>Using <span>Webflow</span></h3>
 
           <div className={styles.card}>
             <div className={styles.imageHolder} />
@@ -71,7 +90,6 @@ export default function Homepage() {
                 </a>
                 <span className={styles.arrow}>{'>'}</span>
               </button>
-              
             </div>
           </div>
 

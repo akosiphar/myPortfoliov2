@@ -65,6 +65,16 @@
     font-weight: 500;
 }
 
+.h3 {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.h3 > span {
+    font-weight: 500;
+}
+
 .card {
     max-width: 1440px;
     display: flex;
@@ -120,6 +130,18 @@
 
 .imageHolder_4 {
     background-image: url('../../assets/jrcc.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 10%;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.imageHolder_5 {
+    background-image: url('../../assets/sarisariStore.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,8 +214,12 @@
         gap: 2rem 0;
     }
 
-    .imageHolder, .imageHolder_2, .imageHolder_3, .textHolder {
-       width: 100%;
+    .imageHolder, .imageHolder_2, .imageHolder_3, .imageHolder_4, .imageHolder_5 {
+        width: 100%;
+    }
+
+    .textHolder {
+        width: 100%;
     }
 }
 
