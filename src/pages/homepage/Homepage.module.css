@@ -1,6 +1,4 @@
 
-
-
 .home {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5rem;
@@ -46,6 +44,7 @@
     text-align: left;
     margin-top: 10rem;
     padding: 0 2rem;
+    margin: 0 auto;
 }
 
 .imageContainer {
@@ -81,6 +80,7 @@
     align-items: end;
     margin: 5rem 0;
     gap: 0 3rem;
+    margin: 0 auto;
 }
 
 .card:nth-child(odd) {
@@ -90,6 +90,7 @@
     align-items: end;
     margin: 1rem 0;
     gap: 0 1rem;
+    margin: 0 auto;
 }
 
 .imageHolder {
