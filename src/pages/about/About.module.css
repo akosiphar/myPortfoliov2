@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;        
+    position: relative;
 }
 
 .contactDiv {
@@ -18,6 +18,7 @@
     align-items: start;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -39,7 +40,6 @@
 }
 
 .content {
-    
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -66,6 +66,7 @@
     align-items: center;
     justify-content: center;
     gap: 0 1rem;
+    
 }
 
 .imageHolder > img {
@@ -82,7 +83,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    margin: 2rem 0 
+    margin: 2rem 0;
+    
+    
 }
 
 .socialContainer {
@@ -92,6 +95,7 @@
     align-items: center;
     gap: 0 1rem;
     margin-right: 1rem;
+    
 }
 
 .contactHolder > div > a > img {
@@ -108,6 +112,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .h1 {
+        font-size: 2.5rem;
+    }
     .heroDiv {
         padding-top: 5rem;
         height: auto;
@@ -115,21 +122,48 @@
     }
 
     .imageHolder {
-        height: auto;
+        height: 20rem;
         width: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        position: relative;
         gap: 1rem 1rem;
     }
 
-    .imageHolder > img {
+    .imageHolder > img:nth-child(1) {
         width: 10rem;
         height: 15rem;
         border: 1px solid;
         border-radius: 15px;
+        position: absolute;
+        top: 20%;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .imageHolder > img:nth-child(2) {
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid;
+        border-radius: 15px;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        overflow: hidden;
+    }
+
+    .imageHolder > img:nth-child(3) {
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid;
+        border-radius: 15px;
+        position: absolute;
+        right: -20px;
+        top: 0;
+        z-index: 3;
         overflow: hidden;
     }
 
@@ -162,5 +196,80 @@
 
     .contactDiv {
         margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .imageHolder {
+        height: 20rem;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 1rem 1rem;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .imageHolder > img:nth-child(1) {
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid;
+        border-radius: 15px;
+        position: absolute;
+        top: 20%;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .imageHolder > img:nth-child(2) {
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid;
+        border-radius: 15px;
+        position: absolute;
+        left: -27px;
+        top: 40%;
+        overflow: hidden;
+    }
+
+    .imageHolder > img:nth-child(3) {
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid;
+        border-radius: 15px;
+        position: absolute;
+        left: 1;
+        top: 0;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    .contactHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .socialContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0 1rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contactHolder > div > a > img {
+        /* filter: invert() brightness(.9); */
+        width: 30px;
     }
 }

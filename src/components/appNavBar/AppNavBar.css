@@ -1,19 +1,24 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.navContainer {
+    position: relative;
+    overflow: hidden;
 }
 
 nav {
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     padding: 1rem 2rem;
-    max-width: 1440px;
-    min-width: 320px;
     width: 100%;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     z-index: 100;
 }
 
@@ -22,6 +27,7 @@ nav {
     position: relative;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 0 1rem;
 }
 
@@ -56,7 +62,24 @@ a:hover::after {
     width: 100%;
 }
 
-.navContainer {
-    position: relative;
+
+@media screen and (max-width: 768px) {
+    .navContainer {
+        position: relative;
+        overflow: hidden;
+        width: auto;
+    }
+
+    nav {
+        padding: 1rem 2rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
 }
 
