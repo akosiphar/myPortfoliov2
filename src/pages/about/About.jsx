@@ -27,7 +27,7 @@ export default function About() {
         </h1>
         
         <div className={styles.content}>
-          <p>Other than being a Full stack developer, 
+          <p>Other than being a Web developer, 
           <span> I love music, games, and traveling. 
           </span>
           </p>
