@@ -31,7 +31,7 @@ export default function Homepage() {
             onInit={(type) => {
               type.typeString("Hi! I'm ")
               .typeString("<span style='color:lightBlue'>Raphaelo Galag,</span>")
-              .typeString("<br><span style='color:white'>a Full Stack Developer.</span")
+              .typeString("<br><span style='color:white'>a Web Developer.</span")
               .start()
             }}
           />
