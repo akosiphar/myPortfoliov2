@@ -65,8 +65,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
     gap: 0 1rem;
-    
 }
 
 .imageHolder > img {
@@ -84,8 +84,6 @@
     align-items: center;
     justify-content: start;
     margin: 2rem 0;
-    
-    
 }
 
 .socialContainer {
@@ -134,7 +132,7 @@
     }
 
     .imageHolder > img:nth-child(1) {
-        width: 10rem;
+        width: 15rem;
         height: 15rem;
         border: 1px solid;
         border-radius: 15px;

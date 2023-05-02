@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './pages/about/About'
 import Homepage from './pages/homepage/Homepage'
 import AppNavBar from './components/appNavBar/AppNavBar'
+import 'aos/dist/aos.css'
 
 function App() {
 

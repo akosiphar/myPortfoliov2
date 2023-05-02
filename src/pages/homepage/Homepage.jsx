@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styles from "./Homepage.module.css"
 import Typewriter from 'typewriter-effect'
+import AOS from 'aos'
 import dArrow from '../../assets/double_arrow_down.png'
 
 //icons 
@@ -19,8 +20,10 @@ import webflow from '../../assets/icons/webflow.png'
 
 export default function Homepage() {
   useEffect(() => {
-    window.scrollTo(0,0)
-  },[])
+    window.scrollTo(0,0);
+    AOS.init({duration: 2000, delay:500, once:true});
+  })
+
 
   return (
     <>
@@ -41,7 +44,7 @@ export default function Homepage() {
           </div>
       </div>
       
-      <div className={styles.skillSet}>
+      <div className={styles.skillSet} data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
         <h2 className={styles.h2}>Skill <span>Set</span></h2>
         <div className={styles.imageContainer}>
           <img src={html} />
@@ -62,11 +65,11 @@ export default function Homepage() {
       </div>
 
 
-      <div className={styles.projects}>
+      <div className={styles.projects} data-aos="fade-up" data-aos-delay="500" data-aos-offset="400">
           <h2 className={styles.h2}>My <span>Works</span></h2>
           <h3 className={styles.h3}>Personal <span>Projects</span></h3>
 
-          <div className={styles.card}>
+          <div className={styles.card} data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
             <div className={styles.imageHolder_5} />
             <div className={styles.textHolder}>
               <p className={styles.title}>E-Commerce Website</p>
@@ -81,7 +84,7 @@ export default function Homepage() {
 
           <h3 className={styles.h3}>Using <span>Webflow</span></h3>
 
-          <div className={styles.card}>
+          <div className={styles.card} data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
             <div className={styles.imageHolder} />
             <div className={styles.textHolder}>
               <p className={styles.title}>INTALIO ESTATES</p>
@@ -94,7 +97,7 @@ export default function Homepage() {
           </div>
 
 
-          <div className={styles.card}>
+          <div className={styles.card} data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
             <div className={styles.imageHolder_2} />
             <div className={styles.textHolder}>
               <p className={styles.title}>Jacinta Enclaves</p>
@@ -107,7 +110,7 @@ export default function Homepage() {
           </div>
 
 
-          <div className={styles.card}>
+          <div className={styles.card} data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
             <div className={styles.imageHolder_3} />
             <div className={styles.textHolder}>
               <p className={styles.title}>Weecomm Centre</p>
@@ -118,7 +121,7 @@ export default function Homepage() {
               </button>
             </div>
           </div>
-          <div className={styles.card}>
+          <div className={styles.card} data-aos="fade-up" data-aos-delay="500" data-aos-offset="200">
             <div className={styles.imageHolder_4} />
             <div className={styles.textHolder}>
               <p className={styles.title}>Jesus Reigns Christian College</p>
